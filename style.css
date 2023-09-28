@@ -23,40 +23,43 @@ h2 {
 }
 
 .main {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #04233d;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ color: #04233d;
 }
 
 .question {
-    font-size: 30px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 25px;
 }
  
 .options {
-    font-size: 25px;
-    grid-template-columns: repeat(2, 1fr);
+ margin-top: 2px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 25px;
+ grid-template-columns: repeat(2, 1fr);
     
 }
  
 button {
-    margin-top: 1%;
-    margin-left: 1%;
-    font-size: 20px;
-    padding: 8px 9px;
-    background-color: #028102;
-    color: white;
-    border: none;
-    cursor: pointer;
+ margin-top: 1%;
+ margin-left: 1%;
+ font-size: 20px;
+ padding: 8px 9px;
+ background-color: #028102;
+ color: white;
+ border: none;
+ cursor: pointer;
 }
 
 a{
-    font-size: 20px;
-    padding: 3px;
-    background-color: #5e0307;
-    color: white;
-    text-decoration: none;
+ font-size: 20px;
+ padding: 3px;
+ background-color: #0c0472;
+ color: white;
+ text-decoration: none;
 }
  
 #score {
-    font-size: 25px;
-    color: #c41f02;
+ font-size: 25px;
+ color: #c41f02;
 }
