@@ -31,7 +31,6 @@ const Questions = [{
     { text: "Arrays", isCorrect: true },
     { text: "Groups", isCorrect: false }
     ]
- 
 },
 {
     q: "To access a value stored in a variable, use the variable's...",
@@ -40,7 +39,6 @@ const Questions = [{
     { text: "Function", isCorrect: false },
     { text: "Replica", isCorrect: false }
     ]
- 
 },
 {
     q: "What are reusable blocks of code that perform a specific task?",
@@ -49,7 +47,6 @@ const Questions = [{
     { text: "CSS", isCorrect: false },
     { text: "Links", isCorrect: false }
     ]
- 
 },
 {
     q: "Use .querySelectorAll() to access...",
