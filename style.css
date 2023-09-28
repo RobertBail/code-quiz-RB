@@ -1,0 +1,57 @@
+body {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ display: inline-flexbox;
+ text-align: center;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+ font-size:60px;
+ color: #09043d;
+}
+
+h2 {
+ font-size: 40px;
+ color:#09043d;
+}
+
+.main {
+    
+    color: navy;
+}
+
+.question {
+    font-size: 30px;
+}
+ 
+.options {
+    font-size: 25px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+ 
+button {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 20px;
+    padding: 8px 12px;
+    background-color: #028102;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    font-size: 19px;
+    padding: 3px;
+    background-color: #5e0307;
+    color: white;
+    text-decoration: none;
+}
+ 
+#score {
+    font-size: 25px;
+    color: #c41f02;
+}
