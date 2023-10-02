@@ -44,7 +44,7 @@ h2 {
  
 button {
  margin-top: 10px;
- margin-bottom: 0px;
+ margin-bottom: 6px;
  margin-left: 1px;
  margin-right: 3px;
  font-size: 20px;
@@ -63,6 +63,11 @@ a{
  text-decoration: none;
 }
  
+h3{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
 #score {
  font-size: 25px;
  color: #c41f02;
