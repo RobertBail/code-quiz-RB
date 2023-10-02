@@ -17,6 +17,31 @@
         <a href="https://robertbail.github.io/code-quiz-RB/">Start Again?</a>
         </button>
         <div id="score"></div>
+    <h2>Save your score:</h2>
+        <div id = "save">
+        <form>
+            <li style="list-style-type: none;">
+            <h3>
+            <label for="grade">Grade:</label>
+            </h3>
+              <select id="grades">
+                 <option value="0">0</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+              </select>
+              </li>
+        <li style="list-style-type: none;">
+           <h3>
+            <label for="msg">Enter your name:</label>
+           </h3>
+            <textarea id="msg" name="comments"></textarea>
+        </li>
+        <button id="save">SAVE</button>
+       </form>
+       <h3 class="message"></h3> 
+        </div>
     <script src="./script.js"></script>
     </div>
 </body>

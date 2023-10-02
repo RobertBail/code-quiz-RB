@@ -3,12 +3,14 @@ body {
  margin: 0;
  padding: 0;
  text-align: center;
- background-color: #e9ff89;
+ align-items: center;
+ background-image: linear-gradient(180deg,#e9ff89,#fff);
  flex: auto;
 }
 
 h1 {
  display:border-box;
+ border-radius: 10px;
  background-color: #ffa136;
  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  font-size:60px;
@@ -18,7 +20,7 @@ h1 {
 
 h2 {
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-size: 40px;
+ font-size: 32px;
  color:#09043d;
 }
 
@@ -34,18 +36,20 @@ h2 {
  
 .options {
  margin-top: 2px;
+ margin-right: 20px;
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 25px;
  grid-template-columns: repeat(2, 1fr);
 }
  
 button {
- margin-top: 1%;
- margin-bottom: 2%;
- margin-left: 1%;
+ margin-top: 10px;
+ margin-bottom: 0px;
+ margin-left: 1px;
+ margin-right: 3px;
  font-size: 20px;
- padding: 8px 9px;
- background-color: #028102;
+ padding: 6px 6px;
+ background-color: #af2f08;
  color: white;
  border: none;
  cursor: pointer;
@@ -62,4 +66,13 @@ a{
 #score {
  font-size: 25px;
  color: #c41f02;
+}
+
+select {
+ font-size: 18px;
+}
+
+textarea{
+ width: 200px;
+ font-size: 18px;
 }

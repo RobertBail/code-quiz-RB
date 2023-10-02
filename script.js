@@ -1,5 +1,29 @@
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
+var grade = document.getElementById("grades");
+var comment = document.getElementById("msg");
+var saveButton = document.getElementById("save");
+
+saveButton.addEventListener("click", function(event) {
+event.preventDefault();
+var studentGrade = {
+    grade: grade.value,
+    comment: comment.value.trim()
+  };
+  
+  localStorage.setItem("studentGrade", JSON.stringify(studentGrade));
+  renderMessage();
+  
+  });
+
+  function renderMessage() {
+    var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
+    if (lastGrade !== null) {
+      document.querySelector(".message").textContent = comment.value.trim() + 
+      " received a:  " + grade.value
+    }
+  }
+
 
 var secondsLeft = 60;
 
