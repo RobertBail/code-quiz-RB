@@ -19,8 +19,8 @@ var studentGrade = {
   function renderMessage() {
     var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
     if (lastGrade !== null) {
-      document.querySelector(".message").textContent = comment.value.trim() + 
-      " received a:  " + grade.value
+      document.querySelector(".message").textContent = " You " + comment.value.trim() + 
+      " have received a: " + grade.value
     }
   }
 
@@ -141,5 +141,4 @@ function checkAns() {
         nextQuestion();
     }
 }
-
 
