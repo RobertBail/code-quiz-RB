@@ -1,34 +1,34 @@
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
+var start = document.getElementById("start");
 var grade = document.getElementById("grades");
 var comment = document.getElementById("msg");
-var saveButton = document.getElementById("save");
+var save = document.getElementById("save");
 
-saveButton.addEventListener("click", function(event) {
-event.preventDefault();
-var studentGrade = {
-    grade: grade.value,
-    comment: comment.value.trim()
-  };
-  
-  localStorage.setItem("studentGrade", JSON.stringify(studentGrade));
-  renderMessage();
-  
-  });
+save.addEventListener("click", function(event) {
+  event.preventDefault();
+  var studentGrade = {
+      grade: grade.value,
+      comment: comment.value.trim()
+    };
 
-  function renderMessage() {
-    var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
-    if (lastGrade !== null) {
-      document.querySelector(".message").textContent = " You " + comment.value.trim() + 
-      " have received a: " + grade.value
+    localStorage.setItem("studentGrade", JSON.stringify(studentGrade));
+    renderMessage();
+    
+    });
+  
+    function renderMessage() {
+      var lastGrade = JSON.parse(localStorage.getItem("studentGrade"));
+      if (lastGrade !== null) {
+        document.querySelector(".message").textContent = " You " + comment.value.trim() + 
+        " have received a: " + grade.value
+      }
     }
-  }
 
 
-var secondsLeft = 60;
+function startTime() {
 
-function setTime() {
-
+  var secondsLeft = 60;
   var timerInterval = setInterval(function() {
     secondsLeft--;
     timeEl.textContent = "Time left: " + secondsLeft;
@@ -41,12 +41,11 @@ function setTime() {
   }, 1000);
 }
 
+
 function sendMessage() {
   timeEl.textContent = "Time's Up!";
-
+  
 }
-
-setTime();
 
 const Questions = [{
     q: "To store groups of data in a single variable, we use...",
@@ -79,8 +78,15 @@ const Questions = [{
     { text: "Special characters", isCorrect: false },
     { text: "Multiple elements", isCorrect: true }
     ]  
+},
+{
+  q: "Booleans have two values:",
+  a: [{ text: "A and B", isCorrect: false },
+  { text: "True or false", isCorrect: true },
+  { text: "One and Two", isCorrect: false },
+  { text: "Large and small", isCorrect: false }
+  ]  
 }
-
 ]
  
 let currQuestion = 0
@@ -110,14 +116,6 @@ function loadQues() {
     }
 }
  
-loadQues();
- 
-function loadScore() {
-    const totalScore = document.getElementById("score")
-    totalScore.textContent = `You scored ${score} out of ${Questions.length}`
-}
- 
- 
 function nextQuestion() {
     if (currQuestion < Questions.length - 1) {
         currQuestion++;
@@ -129,7 +127,7 @@ function nextQuestion() {
         loadScore();
     }
 }
- 
+
 function checkAns() {
     const selectedAns = parseInt(document.querySelector('input[name="answer"]:checked').value);
  
@@ -140,5 +138,11 @@ function checkAns() {
     } else {
         nextQuestion();
     }
+
 }
 
+function loadScore() {
+  const totalScore = document.getElementById("score")
+  totalScore.textContent = `Results: ${score} out of ${Questions.length}`
+  save.style.visibility = 'visible';
+}
