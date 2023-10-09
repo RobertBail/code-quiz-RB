@@ -4,7 +4,7 @@ body {
  padding: 0;
  text-align: center;
  align-items: center;
- background-image: linear-gradient(180deg,#89ffc8,#fff);
+ background-image: linear-gradient(180deg,#fff,#89ffc8);
  flex: auto;
 }
 
@@ -26,7 +26,7 @@ h2 {
 
 .main {
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- color: #04233d;
+ color: #09043d;
 }
 
 .question {
